@@ -1,5 +1,5 @@
 <?php
 
-use App\Http\Controllers\Tools\TestController;
+use App\Http\Controllers\Test\TestController;
 
 Route::get('/test', [TestController::class, 'index']);
