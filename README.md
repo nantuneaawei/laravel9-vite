@@ -64,3 +64,20 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+### 安裝步驟
+
+- 複製編輯 .env
+```
+cp .env.example .env
+```
+## Docker
+
+- 建立docker環境 : docker-compose up -d
+- 進入app : docker-compose exec -it app /bin/sh
+
+- 安裝套件 & 設定 app key
+```
+docker-compose exec app composer install
+docker-compose exec app php artisan key:generate
+```
